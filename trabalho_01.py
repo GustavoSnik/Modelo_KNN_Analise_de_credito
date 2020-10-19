@@ -363,7 +363,7 @@ for k in range(1,26,2):
 
     classificador = KNeighborsClassifier(
         n_neighbors = k,
-        weights     = 'distance',
+        weights     = 'uniform',
         p           = 2
         )
     classificador = classificador.fit(x_treino,y_treino)
@@ -390,7 +390,7 @@ for k in range(1,26,2):
 
     classificador = KNeighborsClassifier(
         n_neighbors = k,
-        weights     = 'distances',
+        weights     = 'uniform',
         p           = 2
         )
 
